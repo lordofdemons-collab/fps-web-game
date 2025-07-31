@@ -1,7 +1,7 @@
 // main.js
 import * as THREE from 'https://esm.sh/three@0.178.0';
+import { GLTFLoader } from 'https://esm.sh/three@0.178.0/examples/jsm/loaders/GLTFLoader.js';
 import { PointerLockControls } from 'https://esm.sh/three@0.178.0/examples/jsm/controls/PointerLockControls.js';
-import { PointerLockControls } from 'https://cdn.skypack.dev/three/examples/jsm/controls/PointerLockControls.js';
 
 let scene, camera, renderer, controls;
 let bullets = [], enemies = [], enemySpeed = 0.05;
