@@ -1,6 +1,6 @@
 // main.js
-import * as THREE from 'https://cdn.skypack.dev/three@0.150.1';
-import { GLTFLoader } from 'https://cdn.skypack.dev/three/examples/jsm/loaders/GLTFLoader.js';
+import * as THREE from 'https://esm.sh/three@0.178.0';
+import { PointerLockControls } from 'https://esm.sh/three@0.178.0/examples/jsm/controls/PointerLockControls.js';
 import { PointerLockControls } from 'https://cdn.skypack.dev/three/examples/jsm/controls/PointerLockControls.js';
 
 let scene, camera, renderer, controls;
