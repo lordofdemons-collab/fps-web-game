@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FPS Web Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #000;
+    }
+
+    #menu {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: linear-gradient(#000000, #1a1a1a);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    #menu h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    #menu button {
+      padding: 12px 28px;
+      font-size: 1.2em;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    #menu button:hover {
+      background-color: #555;
+    }
+
+    #hud {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: white;
+      font-family: monospace;
+      font-size: 18px;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    #health-bar {
+      width: 150px;
+      height: 20px;
+      background-color: #333;
+      border: 1px solid red;
+      margin-top: 5px;
+    }
+
+    #health-fill {
+      height: 100%;
+      width: 100%;
+      background-color: red;
+      transition: width 0.3s ease;
+    }
+
+    #score {
+      margin-top: 5px;
+      color: #00ff00;
+    }
+  </style>
+</head>
+<body>
+  <div id="menu">
+    <h1>FPS Web Game</h1>
+    <button id="startBtn">Start Game</button>
+  </div>
+
+  <div id="hud">
+    <div id="ammo">Ammo: 10/10</div>
+    <div id="health-bar"><div id="health-fill"></div></div>
+    <div id="score">Wave 1 - Score: 0</div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
